@@ -1,4 +1,4 @@
-const db = require('../../data/db-config.js');
+const db = require('../../data/db-config')
 
 async function getRecipeById(id){
     const recipe = await db('recipes').where({recipe_id: id}).first()
